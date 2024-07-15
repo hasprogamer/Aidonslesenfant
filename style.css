@@ -1,6 +1,5 @@
 .navbar{
-		display: none;
-}
+		display: none;}}
 .fade-in {
     opacity: 0;
     animation: fadeInAnimation ease 4s;
@@ -28,13 +27,13 @@ body{
 img{
 		width: 100%;
 		height: 70px;
-		opacity: 0.7;
+		opacity: 1;
 		background-color: black;
 }
 .premier{
 		margin: auto;
 		margin-top: 3em;
-		border: 2px solid yellow;
+		border: 1px solid gray;
 		width: 50em;
 		
 }
@@ -50,19 +49,21 @@ p{
 .image-container img {
     width: 100%;
     height: 100%;
+		color: black;
+		opacity: 1;
 }
 .text p{
 		font-size: 20px;
 }
-
 .image-container .text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-		color: black;
+		color: white;
 		font-family: "Roboto", sans-serif;
 		font-size: 36px;
+		text-shadow: 1px 1px 1px black
 }
 p{
 		font-size: 6px;
@@ -78,9 +79,9 @@ p{
 		flex: 1;
     padding-left: 20px;
 }
-.propos h1{
-		font-size: 24px;
-    color: gold;
+.propos h2{
+		font-size: 35px;
+    color: gray;
 		margin-bottom: 20px;
 }
 .propos p{
@@ -88,6 +89,9 @@ p{
     margin-bottom: 20px;
 		font-size: 20px;
 		line-height: 1.5;
+}
+.box{
+		width: 50%;
 }
 .box img{
 		max-width: 80%;
@@ -104,7 +108,7 @@ p{
 }
 .ranger h2{
 		text-align: center;
-		color: gold;
+		color: gray;
 		font-size: 25px;
 }
 .ranger p{
@@ -114,7 +118,28 @@ p{
 .ranger button{
 margin-left: 25%;
 }
+footer{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		background-color: #333333;
+		color: white;
+}
+a{
+		color: white;
+}
+.ranger0 h1{
+		font-size: 20px;
+}
 @media (max-width: 767px) {
+		.propos h2{
+		font-size: 15px;
+    color: gray;
+		margin-bottom: 20px;
+		align-items: center;
+}
+		.ranger0 h1{
+		font-size: 1em;
+}
 		#pillNav2{
 				display: none;
 		}
@@ -130,7 +155,7 @@ margin-left: 25%;
 }
 		.propos h1{
 		font-size: 2em;
-    color: gold;
+    color: gray;
 		margin-bottom: 20px;
 }
 .text p{
@@ -147,7 +172,7 @@ margin-left: 25%;
 }
 .ranger h2{
 		text-align: center;
-		color: gold;
+		color: gray;
 		font-size: 10px;
 }
 .ranger p{
@@ -157,7 +182,4 @@ margin-left: 25%;
 .ranger button{
 		font-size: 10px;
 }
-}
-strong{
-		color: gold;
-}
+	}
